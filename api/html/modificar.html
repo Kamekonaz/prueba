@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/catalogo.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  </head>
+  <body>
+    <div class="container-xl-12 conta">
+      <header class="Encabezado col-lg-12">
+        <a href=/index>Bienvenido</a>
+        <a href=/catalogo>Nuestro Producto</a>
+        <a href=/formulario>Contacto</a>
+        <a href=/crud>Soporte</a>
+        <img class="img-fluid" src="{% static '/foto/logo.png' %}" alt="">
+      </header>
+      <div class="Formulario col-xl-12">
+          <br><br>
+          <h1>formulario</h1>
+
+          <form id="formulario" action="" method="post">
+            {% csrf_token %}
+            <table>
+              {{forms.as_table}}
+              <br><br>
+            </table>
+
+            <br><br>
+          <button class="espacio" type="submit" name="button">Enviar</button>
+          {{mensaje}}
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+
+       </form>
+
+      <footer class="pie col-lg-12">
+        <br>
+        <p>El dueño del circo en este negocio </p>
+      </footer>
+
+
+
+
+    </div>
+  </body>
+</html>

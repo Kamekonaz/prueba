@@ -1,0 +1,140 @@
+#camioneta:checked ~ #imagenes .auto,#camioneta:checked ~#imagenes .camion{
+  display: none;
+}
+#auto:checked ~ #imagenes .camioneta,#auto:checked ~
+#imagenes .camion{
+  display: none;
+}
+#camion:checked ~ #imagenes .auto,#camion:checked ~
+#imagenes .camioneta{
+  display: none;
+}
+.conta{
+
+  background-color:#dfdfdf
+}
+
+.Encabezado
+{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  margin: 0px;
+}
+.Encabezado a{
+  font-size: 180%;
+  margin-left: 25px;
+  font-style: arial;
+  color: #ffffff;
+
+}
+
+.Encabezado a:hover{
+  color:#940914
+}
+
+.Encabezado img {
+  float: left;
+  height: 100px;
+  width: 17%;
+  margin-top: -40px;
+}
+.camioneta p
+{
+  margin-top: 40px;
+}
+.auto p
+{
+  margin-top: 40px;
+}
+.camion p
+{
+  margin-top: 40px;
+}
+.camioneta a{
+  margin-left: 180px;
+  margin-bottom: 20px;
+  color:white;
+}
+.auto a{
+  margin-left: 180px;
+  margin-bottom: 20px;
+  color:white;
+}
+.camion a{
+  margin-left: 180px;
+  margin-bottom: 20px;
+  color:white;
+}
+.Encabezado a
+{
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 25px;
+  height: 10px;
+  font-family: Arial;
+}
+
+
+
+
+.letras
+{
+font-size: 20px;
+font-family: arial ;
+}
+
+.filtro{
+background-color:#dfdfdf;
+text-align: center;
+font-family: arial;
+padding-top:  30px;
+
+}
+
+.vehiculo{
+
+  text-align: left;
+  padding: 90px;
+  background-color:#dfdfdf;
+
+}
+.vehiculo h1{
+  text-align: center;
+}
+.vehiculo p{
+  margin-left: 10px;
+}
+.vehiculo img{
+  height: 200px;
+  width: 200px;
+  margin-left: 80px;
+}
+.camioneta {
+  border-style: outset;
+  border-width: 1px;
+  border-color: red;
+}
+.auto{
+  border-style: outset;
+  border-width: 3px;
+  border-color: white;
+}
+.camion{
+  border-style: outset;
+  border-width: 1px;
+  border-color: red;
+}
+
+.pie{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  height: 20px;
+}
+.pie p{
+  font-style: italic;
+  color: rgb(215, 29, 29);
+  font-size: 190%;
+  margin-top: -30px
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/Bootstrap.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  </head>
+  <body>
+    <div class="container-xl-12 conta">
+      <header class="Encabezado col-lg-12">
+        <a href=/index>Bienvenido</a>
+        <a href=/catalogo>Nuestro Producto</a>
+        <a href=/formulario>Contacto</a>
+        <a href=/crud>Soporte</a>
+        <img class="img-fluid" src="../foto/logo.png" alt="">
+      </header>
+      <div class="Formulario col-xl-12">
+          <h1>formulario</h1>
+          <form id="formulario" action="" method="post">
+
+
+          <div class="col-xl-12">
+            <label for="nombre">Nombre y Apellido</label>
+            <input id="nombre" required  type="text" name="nombre" minlength="5"  placeholder="Ej:juan lopez">
+          </div>
+          <br>
+          <div class="col-xl-12">
+            <label for="correo">Correo</label>
+            <input id="correo" required  type="text" name="correo"   placeholder="Ej:nombre@example.com">
+          </div>
+          <br>
+          <div class="col-xl-12">
+            <label for="fono">Telefono</label>
+            <input id="fono" required  type="number" name="correo"  placeholder="Ej:9 9999 9999">
+          </div>
+          <br>
+          <div class="col-xl-12">
+            <label for="Cantidad">Cantidad</label>
+            <input id="presupuesto" required  type="number" name="Cantidad" minlength="1" placeholder="Ej:9000000">
+            </div>
+          <br>
+
+          <div class="col-xl-12">
+            <label>Pais</label>
+            <input id="chec2" type="checkbox" name="var1" value="Chile">
+            <label for="chec2">Chile</label>
+            <input id="chec1" type="checkbox" name="var2" value="Peru">
+            <label for="chec1">Peru</label>
+            <input id="chec3" type="checkbox" name="var3" value="Mexico ">
+            <label for="chec3">Mexico</label>
+            <input id="chec3" type="checkbox" name="var3" value="Estados Unidos ">
+            <label for="chec3">Estados Unidos</label>
+          </div>
+          <br>
+          <div class="col-xl-12">
+            <label for="Direccion">Direccion</label>
+            <input id="Direccion" required  type="number" name="Cantidad" minlength="5" placeholder="Ej:Calle falsa 123">
+            </div>
+          <br>
+
+          <div class="col-xl-12">
+            <label>tipo</label>
+            <select class="modelo" name="modelo">
+              <option>Selecione un modelo</option>
+              <option>Pila</option>
+              <option>m</option>
+              <option>Acido</option>
+              <option>Nieve</option>
+              <option>Oro Blanco</option>
+              <option>Batman pink</option>
+              <option>Fruta I</option>
+              <option>Hongo</option>
+              <option>Fruta S</option>
+            </select>
+          </div>
+          <br>
+          <div class="espacio col-xl-12">
+            <label>Comentario que agregar </label><br>
+
+            <textarea name="name" rows="4" cols="60" placeholder="comentarios"></textarea>
+          </div>
+          <br>
+
+          <button class="espacio" type="submit" name="button">Enviar</button>
+
+          <br><br>
+
+
+
+       </form>
+
+      <footer class="pie col-lg-12">
+        <br>
+        <p>El dueño del circo en este negocio </p>
+      </footer>
+
+      <script src="../js/bootstrap.js">
+
+
+    </div>
+  </body>
+</html>

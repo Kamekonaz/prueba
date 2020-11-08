@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Muestra</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/catalogo.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-xl-12 conta">
+
+      <header class="Encabezado col-lg-12">
+        <a href=/index>Bienvenido</a>
+        <a href=/catalogo>Nuestro Producto</a>
+        <a href=/formulario>Contacto</a>
+        <a href=/crud>Soporte</a>
+        <img class="img-fluid" src="{% static '/foto/logo.png' %}" alt="">
+      </header>
+
+      <div class="filtro ">
+      <input type="radio" name="filtro" id="todo">
+      <label class="letras" for="todo">Todos</label>
+      <input type="radio" name="filtro" id="camioneta">
+      <label class="letras"for="camioneta">Quimica</label>
+      <input type="radio" name="filtro" id="auto">
+      <label class="letras" for="auto">Oro Blancos</label>
+      <input type="radio" name="filtro" id="camion">
+      <label class="letras"for="camion">Natural</label>
+    <div id=imagenes class="col-xl-12">
+            <div class="vehiculo col-xl-12">
+              <div class="row">
+
+                  <div class="camioneta col-xl-4">
+                      <h1>Pila </h1>
+                      <img src="{% static '/foto/pila.png' %}" alt="" >
+                      <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+
+                  </div>
+
+                  <div class="camioneta col-xl-4">
+                      <h1>M</h1>
+                      <img src="{% static '/foto/m.png' %}" alt="" >
+                      <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                  </div>
+
+                  <div class="camioneta col-xl-4">
+                      <h1>Acido</h1>
+                      <img src="{% static '/foto/lsd.png' %}" alt="" >
+                      <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                  </div>
+
+              </div>
+
+                <div class="row">
+
+                    <div class="auto col">
+                        <h1>Nieve </h1>
+                        <img src="{% static '/foto/nieve.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+
+                    <div class="auto col">
+                        <h1>Oro Blanco</h1>
+                        <img src="{% static '/foto/oro_blanco.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+
+                    <div class="auto col">
+                        <h1>Batman Pink</h1>
+                        <img src="{% static '/foto/batman.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="camion col-xl">
+                        <h1>Fruta I</h1>
+                        <img src="{% static '/foto/frutaI.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+                    <div class="camion col-xl">
+                        <h1>Hongo </h1>
+                        <img src="{% static '/foto/hongo.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+                    <div class="camion col-xl">
+                        <h1>Fruta S </h1>
+                        <img src="{% static '/foto/frutaS.png' %}" alt="" >
+                        <p>  relleno <br>relleno <br>relleno <br><br>$10.000 unidad <br></p >
+                    </div>
+              </div>
+              </div>
+
+
+            </div>
+    </div>
+
+    <footer class="pie col-lg-12">
+      <p>El dueño del circo en este negocio </p>
+    </footer>
+
+    </div>
+
+  </body>
+</html>

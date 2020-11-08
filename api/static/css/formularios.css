@@ -1,0 +1,51 @@
+.conta{
+
+  background-color:#dfdfdf;
+
+}
+
+.Encabezado
+{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  margin: 0px;
+  height: 200px;
+}
+.Encabezado a{
+  font-size: 180%;
+  margin-left: 25px;
+  font-style: arial;
+  color: #ffffff;
+
+}
+
+.Encabezado a:hover{
+  color:#940914
+}
+
+.Encabezado img {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-top: -40px;
+}
+
+.cuerpo{
+  height:1800px;
+}
+
+
+
+.pie{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  height: 20px;
+}
+.pie p{
+  font-style: italic;
+  color: rgb(215, 29, 29);
+  font-size: 190%;
+  margin-top: 0px
+}

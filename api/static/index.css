@@ -1,0 +1,77 @@
+.conta{
+
+  background-color:#dfdfdf;
+}
+
+.Encabezado
+{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  margin: 0px;
+}
+.Encabezado a{
+  font-size: 180%;
+  margin-left: 25px;
+  font-style: arial;
+  color: #ffffff;
+
+}
+
+.Encabezado a:hover{
+  color:#940914
+}
+
+.Encabezado img {
+  float: left;
+  height: 5%;
+  width: 17%;
+  margin-top: -40px;
+}
+.carousel
+{
+  background-color: #acacac;
+}
+.carousel img{
+  height: 250px;
+
+}
+.carousel-inner{
+  margin-left: 40%;
+  height: 290px;
+}
+.cuerpo{
+  height: 500px;
+}
+.cuerpo h1{
+  color: #9e2929;
+  font-style: Impact;
+  font-size: 30px:
+}
+
+.cuerpo p{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-style: Tahoma;
+}
+
+.cuerpo img {
+  margin-left: 20%;
+  height: 200px;
+  width: 40%;
+
+}
+
+
+.pie{
+  background-color:#000000;
+  text-align: center;
+  padding: 30px;
+  height: 20px;
+}
+.pie p{
+  font-style: italic;
+  color: rgb(215, 29, 29);
+  font-size: 190%;
+  margin-top: -30px
+}

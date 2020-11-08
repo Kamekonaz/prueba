@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/catalogo.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  </head>
+  <body>
+    <div class="container-xl-12 conta">
+      <header class="Encabezado col-lg-12">
+        <a href=/index>Bienvenido</a>
+        <a href=/catalogo>Nuestro Producto</a>
+        <a href=/formulario>Contacto</a>
+        <a href=/crud>Soporte</a>
+        <img class="img-fluid" src="{% static '/foto/logo.png' %}" alt="">
+      </header>
+
+      <br><br><br>
+      <table class= "table table-bordered">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">nombre</th>
+          <th scope="col">correo</th>
+          <th scope="col">telefono</th>
+          <th scope="col">cantidad</th>
+          <th scope="col">direccion</th>
+          <th scope="col">tipo</th>
+          <th scope="col">comentario</th>
+          <th scope="col">modificar</th>
+          <th scope="col">eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in formu %}
+        <tr>
+          <td class="table-light">{{i.id}}</td>
+          <td class="table-light">{{i.nombre}}</td>
+          <td class="table-light">{{i.correo}}</td>
+          <td class="table-light">{{i.telefono}}</td>
+          <td class="table-light">{{i.cantidad}}</td>
+          <td class="table-light">{{i.direccion}}</td>
+          <td class="table-light">{{i.tipo}}</td>
+          <td class="table-light">{{i.comentario}}</td>
+          <td class="table-light"><a href="/modificar/ {{i.id}} " >Modificar</a></td>
+          <td class="table-light"><a href="/eliminar/ {{i.id}} " >eliminar</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      </table>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <footer class="pie col-lg-12">
+        <br>
+        <p>El dueño del circo en este negocio </p>
+      </footer>
+    </div>
+  </body>
+  </html>
